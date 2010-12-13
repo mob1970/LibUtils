@@ -1,0 +1,18 @@
+Gem::Specification.new do |gem|
+  gem.name    = %q{libutils}
+  gem.version = '0.1.0'
+  gem.date    = %q{2010-12-13}
+  
+  gem.summary = %q{Library which contains useful ruby methods.}
+  gem.description = %q{Library which contains useful ruby methods grouping functionalities ported from other languages like java.}
+  
+  gem.authors  = ['Miquel Oliete']
+  gem.email    = %q{miquel@miqueloliete.com}
+  gem.homepage = %q{http://github.com/mob1970/LibUtils}
+
+  gem.require_path = 'lib'
+ 
+  # ensure the gem is built out of versioned files
+  gem.files = Dir['README.rdoc', 'CHANGELOG', 'LICENSE', 'lib/array_utils.rb', 'lib/string_utils.rb', 'lib/word_utils.rb']
+end
+
