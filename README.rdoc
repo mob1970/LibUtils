@@ -1,0 +1,17 @@
+= LibUtils
+
+  LibUtils is a group of methods for making code shorter and cleaner (containing among other things the nil checking into every method). I use a lot of these methods in my everyday coding and they help me to maintain my code cleaner and clearer.
+
+  At this moment there are three modules available (I wish I could add more), which are:
+	- ArrayUtils  : Methods which work on arrays.
+	- StringUtils : Methods which work on strings.
+	- WordUtils   : Methods which work on words.
+
+  I hope you think these modules are as useful as I think they are.
+
+
+Install the gem: 
+
+  gem install libutils
+
+
