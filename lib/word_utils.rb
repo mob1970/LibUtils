@@ -32,6 +32,20 @@ module LibUtils
 	  return val.strip()
 	end		
 	
+	###
+	#
+	###
+	def self.swap_case(str)
+	  return str if (!str || str.strip().empty?())
+	  
+	  val = ''
+	  str.each_char do |char|
+		val += (char == char.downcase()) ? char.upcase : char.downcase
+	  end
+	  
+	  return val
+	end
+	
   end
 
 end

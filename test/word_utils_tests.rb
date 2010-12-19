@@ -23,5 +23,15 @@ class WordUtilsTest < Test::Unit::TestCase
 	assert_equal 'Hola Que Tal?', LibUtils::WordUtils.capitalize('hola que tal?')
 	assert_equal 'Hola Que Tal?', LibUtils::WordUtils.capitalize('HOLA QUE TAL?')
   end
+  
+  ###
+  #
+  ###
+  def test_swap_case
+	assert_equal nil, LibUtils::WordUtils.swap_case(nil)
+	assert_equal '', LibUtils::WordUtils.swap_case('')
+	assert_equal '   ', LibUtils::WordUtils.swap_case('   ')
+	assert_equal '%&?A"@#', LibUtils::WordUtils.swap_case('%&?a"@#')	
+  end
 
 end
